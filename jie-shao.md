@@ -12,8 +12,9 @@ maven
 
 ## MAVEN 命令
 
-### 初始化
+### 初始化安装node以及依赖包
 
+只需要
 ```text
 mvn --projects module名 clean install
 ```

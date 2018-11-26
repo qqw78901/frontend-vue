@@ -6,11 +6,14 @@
 
 执行MAVEN 命令
 
-### 初始化
+### 安装
 
 ```text
-mvn --projects pas-web clean install
+mvn clean install
 ```
-待 
+待maven完全安装好后执行下一步
+
+
+
 
 
