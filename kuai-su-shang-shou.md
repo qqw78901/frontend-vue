@@ -65,9 +65,21 @@ mvn clean install
 
 ### 启动前端服务器
 
+在启动了接口服务器后，到web的maven模块目录下输入命令
 
 
+```bash
+mvn frontend:npm@npm-run-dev
+```
+即可启动前端服务器
 
+
+### 开始开发
+
+- 各个页面入口在views目录下添加
+- 页面使用的组件则在components目录下添加
+- common目录是一些公共的组件，不推荐改动
+- 菜单部分在menu.js进行配置
 
 
 
@@ -77,5 +89,8 @@ mvn clean install
 
 ### 常见问题
 
+- maven包安装时控制台报错，排除了其他插件的因素之后，确实是frontend-maven-plugin抛出错误的，可能有以下原因
+    - 权限不足，要使用管理员身份执行
+    - npm包安装失败，停掉maven进程，任务管理器下关掉所有node相关进程，重新执行install
 
 
