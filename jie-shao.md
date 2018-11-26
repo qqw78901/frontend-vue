@@ -14,7 +14,7 @@ maven
 
 ### 初始化安装node以及依赖包
 
-只需要
+只需要顺利安装好maven依赖即可
 ```text
 mvn --projects module名 clean install
 ```
